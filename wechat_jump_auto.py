@@ -70,7 +70,7 @@ def jump(distance):
     press_time = distance * press_coefficient
     press_time = max(press_time, 200)   # 设置 200ms 是最小的按压时间
     press_time = int(press_time)
-    cmd = './common/fifo-take-screenshot.sh input swipe {x1} {y1} {x2} {y2} {duration}'.format(
+    cmd = './fifo-take-screenshot.sh input swipe {x1} {y1} {x2} {y2} {duration}'.format(
         x1=swipe_x1,
         y1=swipe_y1,
         x2=swipe_x2,

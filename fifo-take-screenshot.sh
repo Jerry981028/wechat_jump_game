@@ -4,7 +4,7 @@ fifo="fifo-screenshot"
 if [ "$*" == "capture" ] ;then
     echo "capture" >${fifo}
     cat "${fifo}" >autojump.png
-if [ "$*" == "cat" ] ;then
+elif [ "$*" == "cat" ] ;then
     echo "capture" >${fifo}
     cat "${fifo}"
 elif [ -n "$*" ] ;then
